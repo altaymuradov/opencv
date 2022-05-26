@@ -29,12 +29,6 @@ while True:
     yellow_mask = cv2.inRange(hsv, low_yellow, high_yellow)
     yellow = cv2.bitwise_and(frame, frame, mask=yellow_mask)
 
-    # Purple
-    low_purple = np.array([158, 255, 255])
-    high_purple = np.array([129, 50, 70])
-    purple_mask = cv2.inRange(hsv, low_purple, high_purple)
-    purple = cv2.bitwise_and(frame, frame, mask=purple_mask)
-
     cv2.imshow('frame', frame)
     #cv2.imshow('Red Mask', red)
     #cv2.imshow('Blue mask', blue)
