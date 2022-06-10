@@ -32,8 +32,8 @@ while True:
     cv2.imshow('frame', frame)
     #cv2.imshow('Red Mask', red)
     #cv2.imshow('Blue mask', blue)
-    #cv2.imshow('yellow', yellow)
-    cv2.imshow('Purple', purple)
+    cv2.imshow('yellow', yellow)
+   
     if cv2.waitKey(1) == ord('q'):
         break
 
